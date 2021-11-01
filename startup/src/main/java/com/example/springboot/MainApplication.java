@@ -9,10 +9,10 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class Application {
+public class MainApplication {
 
 	public static void main(String[] args) {
-		SpringApplication app = new SpringApplication(Application.class);
+		SpringApplication app = new SpringApplication(MainApplication.class);
         app.setDefaultProperties(Collections
           .singletonMap("server.port", "8083"));
         app.run(args);
